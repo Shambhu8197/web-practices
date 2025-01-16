@@ -52,5 +52,17 @@ body {
     background-color: rgb(32, 200, 229);
    
 }
+.circle{
+    height: 60px;
+    width:60px;
+    background-color: rgba(7, 239, 34, 0.848);
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
+}
 
 
