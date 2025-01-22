@@ -1,0 +1,44 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+.container {
+  width: 80vw;
+  height: 50vh;
+  border: 1px solid black;
+  background-color: #852929;
+}
+.box {
+  width: 20vw;
+  height: 30vh;
+  background-color: #31a3a7;
+  animation: name 2s forwards 3s 4s infinite;
+  /* transition: width 2s, height 2s, background-color 2s; */
+}
+/* .container:hover .box {
+  width: 100vw;
+  height: 50vh;
+  background-color: #0921f9;
+} */
+@keyframes name {
+  from {
+    background-color: #31a3a7;
+  }
+  to {
+    width: 100vw;
+    height: 50vh;
+    background-color: #09f93d;
+  }
+}
