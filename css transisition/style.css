@@ -30,4 +30,14 @@ body {
   position: absolute; /* Add this line */
   bottom: 0; /* Add this line */
   left: 0; /* Add this line */
+  animation: bounce 4s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 14vw); /* Adjust based on the width of the box */
+  }
 }
