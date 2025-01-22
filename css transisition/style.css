@@ -15,30 +15,19 @@ body {
   background-color: aqua;
 }
 .container {
-  width: 80vw;
-  height: 50vh;
+  width: 90vw;
+  height: 70vh;
   border: 1px solid black;
   background-color: #852929;
+  position: relative; /* Add this line */
 }
 .box {
-  width: 20vw;
-  height: 30vh;
+  width: 14vw;
+  height: 23vh;
   background-color: #31a3a7;
-  animation: name 2s forwards 3s 4s infinite;
-  /* transition: width 2s, height 2s, background-color 2s; */
-}
-/* .container:hover .box {
-  width: 100vw;
-  height: 50vh;
-  background-color: #0921f9;
-} */
-@keyframes name {
-  from {
-    background-color: #31a3a7;
-  }
-  to {
-    width: 100vw;
-    height: 50vh;
-    background-color: #09f93d;
-  }
+  border-radius: 340px;
+  transition: width 2s, height 2s, background-color 2s;
+  position: absolute; /* Add this line */
+  bottom: 0; /* Add this line */
+  left: 0; /* Add this line */
 }
