@@ -15,29 +15,36 @@ body {
   background-color: aqua;
 }
 .container {
-  width: 90vw;
-  height: 70vh;
-  border: 1px solid black;
+  width: 80vw;
+  height: 80vh;
   background-color: #852929;
   position: relative; /* Add this line */
 }
 .box {
-  width: 14vw;
+  width: 10vw;
   height: 23vh;
   background-color: #31a3a7;
   border-radius: 340px;
-  transition: width 2s, height 2s, background-color 2s;
-  position: absolute; /* Add this line */
-  bottom: 0; /* Add this line */
-  left: 0; /* Add this line */
-  animation: bounce 4s ease-in-out infinite; /* Adjust the duration and easing as needed */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: animateX 3s ease-out infinite,
+    animateY 1s ease-out infinite alternate; /* Adjust the duration and easing as needed */
 }
 
-@keyframes bounce {
-  0%, 100% {
+@keyframes animateX {
+  from {
     left: 0;
   }
-  50% {
-    left: calc(100% - 14vw); /* Adjust based on the width of the box */
+  to {
+    left: 100%;
+  }
+}
+@keyframes animateY {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100%;
   }
 }
