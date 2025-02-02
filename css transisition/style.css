@@ -1,0 +1,50 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+.container {
+  width: 80vw;
+  height: 80vh;
+  background-color: #852929;
+  position: relative; /* Add this line */
+}
+.box {
+  width: 10vw;
+  height: 23vh;
+  background-color: #31a3a7;
+  border-radius: 340px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: animateX 3s ease-out infinite,
+    animateY 1s ease-out infinite alternate; /* Adjust the duration and easing as needed */
+}
+
+@keyframes animateX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes animateY {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}
